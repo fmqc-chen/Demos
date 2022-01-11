@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 当视口宽度大于等于 768 px 时，背景颜色为粉色 */
+        /* 当视口宽度大于等于 992 px 时，背景颜色为橙色 */
+        /* 当视口宽度大于等于 1200 px 时，背景颜色为红色 */
+
+        @media (min-width: 768px) {
+            body {
+                background-color: pink;
+            }
+        }
+
+        @media (min-width: 992px) {
+            body {
+                background-color: orange;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        /* css属性都有层叠性。 */
+         /* 顺序为，使用min-width 时，要从小到大书写；使用max-width时，要从大到小书写。 */
+         /* 顺序为，使用min-width 时，要从小到大书写；使用max-width时，要从大到小书写。 */
+         /* 顺序为，使用min-width 时，要从小到大书写；使用max-width时，要从大到小书写。 */
+
+         /* 完整写法：@media 关键词 媒体类型 and （媒体特性）{css代码} */
+         /* 但一般使用如上示例（背景颜色）的写法 */
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
