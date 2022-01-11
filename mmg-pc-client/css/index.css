@@ -1,0 +1,270 @@
+/* --------------------网站入口 */
+.mmg-entry {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.mmg-entry .container {
+    position: relative;
+    height: 500px;
+    /* ps  */
+    /* background-color: pink; */
+}
+
+.mmg-entry .container .category {
+    /* 子绝父相 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 500px;
+    background-color: #000;
+    opacity: .7;
+}
+
+.mmg-entry .category a {
+    color: #fff;
+}
+
+.mmg-entry .category li {
+    position: relative;
+    height: 50px;
+    padding-left: 44px;
+    line-height: 50px;
+}
+
+.mmg-entry .container li:hover {
+    background-color: #fce64d;
+}
+
+.mmg-entry .category span {
+    font-size: 14px;
+}
+
+.mmg-entry .category span:first-child {
+    margin-left: 15px;
+}
+
+.mmg-entry .category a::after {
+    content: '';
+    position: absolute;
+    top: 19px;
+    right: 15px;
+    width: 6px;
+    height: 11px;
+    /* ps  */
+    /* background-color: red; */
+    background: url('../images/sprites.png')-80px -110px;
+}
+
+.mmg-entry .prev {
+    position: absolute;
+    top: 228px;
+    left: 220px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .2) url('../images/sprites.png')12px -61px;
+    /* background-color: rgba(0, 0, 0, .2); */
+}
+
+.mmg-entry .next {
+    position: absolute;
+    top: 228px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .2) url('../images/sprites.png')-22px -59px;
+    /* background-color: rgba(0, 0, 0, .2); */
+}
+
+.mmg-entry .indicator {
+    position: absolute;
+    left: 580px;
+    bottom: 30px;
+    width: 110px;
+    height: 10px;
+    /* ps  */
+    /* background-color: red; */
+}
+.mmg-entry .indicator li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, .43);
+    border-radius: 50%;
+}
+
+.mmg-entry .indicator li.active {
+    background-color: #fff;
+}
+
+.mmg-entry .indicator li:last-child {
+    margin-right: 0;
+}
+
+/* -------------猫咪主粮模块:mmg-cat-food */
+.mmg-cat-food {
+    height: 520px;
+    /* ps  */
+    /* background-color: pink; */
+}
+
+.mmg-cat-food .food-hd {
+    height: 115px;
+    /* ps  */
+    /* background-color: skyblue; */
+    line-height: 115px;
+}
+
+.mmg-cat-food .food-hd h2 {
+    height: 115px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.mmg-cat-food .food-hd h2 span {
+    font-size: 16px;
+    color: #999;
+}
+
+.mmg-cat-food .food-hd a {
+    color: #999;
+}
+
+.mmg-cat-food .food-hd a::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin-left: 13px;
+    /* ps  */
+    /* background-color: red; */
+    background: url('../images/sprites.png') 0 -109px;
+    vertical-align: middle;
+}
+
+.mmg-cat-food .food-list {
+    height: 405px;
+    /* ps  */
+    /* background-color: orange; */
+}
+
+.mmg-cat-food .food-list li {
+    float: left;
+    width: 304px;
+    height: 405px;
+    margin-right: 8px;
+    background-color: #f0f9f4;
+    line-height: 1;
+    text-align: center;
+}
+
+.mmg-cat-food .food-list li:last-child {
+    margin-right: 0;
+}
+
+.mmg-cat-food .food-list li img {
+    width: 100%;
+}
+
+.mmg-cat-food .food-list li h3 {
+    height: 30px;
+    margin-top: 22px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mmg-cat-food .food-list li p {
+    color: #9a2e1f;
+    font-size: 23px;
+}
+
+.mmg-cat-food .food-list li span {
+    font-size: 17px;
+}
+
+/* -------------猫咪零食模块:mmg-cat-treats */
+.mmg-cat-treats {
+    height: 520px;
+    /* ps  */
+    /* background-color: pink; */
+}
+
+.mmg-cat-treats .treats-hd {
+    height: 115px;
+    /* ps  */
+    /* background-color: skyblue; */
+    line-height: 115px;
+}
+
+.mmg-cat-treats .treats-hd h2 {
+    height: 115px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.mmg-cat-treats .treats-hd h2 span {
+    font-size: 16px;
+    color: #999;
+}
+
+.mmg-cat-treats .treats-hd a {
+    color: #999;
+}
+
+.mmg-cat-treats .treats-hd a::after{
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin-left: 13px;
+    /* ps  */
+    /* background-color: red; */
+    background: url('../images/sprites.png') 0 -109px;
+    vertical-align: middle;
+}
+
+.mmg-cat-treats .treats-list {
+    height: 405px;
+    /* ps  */
+    /* background-color: orange; */
+}
+
+.mmg-cat-treats .treats-list li {
+    float: left;
+    width: 304px;
+    height: 405px;
+    margin-right: 8px;
+    background-color: #f0f9f4;
+    line-height: 1;
+    text-align: center;
+}
+
+.mmg-cat-treats .treats-list li:last-child {
+    margin-right: 0;
+}
+
+.mmg-cat-treats .treats-list li img {
+    width: 100%;
+}
+
+.mmg-cat-treats .treats-list li h3 {
+    height: 30px;
+    margin-top: 22px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mmg-cat-treats .treats-list li p {
+    color: #9a2e1f;
+    font-size: 23px;
+}
+
+.mmg-cat-treats .treats-list li span {
+    font-size: 17px;
+}
+
+

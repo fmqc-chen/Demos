@@ -1,0 +1,268 @@
+/* 声明字体图标 此处要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+/* 版心的公共类 */
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/*--------------------- 快捷菜单模块：mmg-shortcut */
+.mmg-shortcut {
+    height: 56px;
+    background-color: #f5f5f5;
+}
+
+.mmg-shortcut .container {
+    height: 56px;
+    /* ps  */
+    /* background-color: skyblue; */
+}
+
+.mmg-shortcut ul li {
+    float: left;
+    line-height: 56px;
+    color: #818181;
+}
+
+.mmg-shortcut ul a {
+    margin: 0 18px;
+    color: #383838;
+    font-size: 20px;
+}
+
+/* .mmg-shortcut li:last-child a {
+    margin-right: 0;
+} */
+
+.mmg-shortcut li:last-child a::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-top: -3px;
+    margin-right: 4px;
+    /* ps  */
+    /* background-color: red; */
+    background: url('../images/sprites.png')-159px -69px;
+    /* 垂直对齐方式 */
+    vertical-align: middle;
+}
+
+/* 头部模块 */
+.header {
+    position: relative;
+    height: 171px;
+    /* ps  */
+    /* background-color: pink; */
+}
+
+/* logo 模块 */
+.logo {
+    position: absolute;
+    left: 35px;
+    width: 171px;
+    height: 171px;
+    /* ps  */
+    /* background-color: skyblue; */
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 171px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.search {
+    position: absolute;
+    left: 350px;
+    top: 43px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #E5C928;
+}
+
+.search input {
+    float: left;
+    width: 455px;
+    height: 36px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 83px;
+    height: 37px;
+    background-color: #6E4139;
+    font-size: 18px;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    top: 100px;
+    left: 390px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+}
+
+.shopcar {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #f5f5f5;
+    background-color: #fff;
+}
+
+.shopcar::before {
+    content: '\e93a';
+    font-family: 'icomoon';
+    margin-right: 5px;
+    color: red;
+}
+
+.shopcar::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    margin-left: 10px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    background-color: red;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;
+}
+
+/* nav模块制作 */
+.nav {
+    height: 47px;  
+}
+
+.nav .dropdown {
+    float: left;
+    width: 200px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.nav .navitems {
+    float: left;
+}
+
+.dropdown .all {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 25px;
+}
+
+/* -------------------宣传服务：mmg-service */
+.mmg-service {
+    height: 174px;
+    background-color: #f5f5f5;
+}
+
+.mmg-service .container {
+    width: 1393px;
+    height: 173px;
+    border-bottom: 1px solid #818181;
+    /* ps  */
+    /* background-color: pink; */
+}
+
+.mmg-service .container a {
+    float: left;
+    width: 33.33%;
+    height: 173px;
+    /* ps  */
+    /* background-color: skyblue; */
+    text-align: center;
+    line-height: 173px;
+    font-size: 28px;
+    color: #383835;
+}
+
+.mmg-service .container a::before {
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    margin-right: 19px;
+    /* ps  */
+    /* background-color: red; */
+    background: url('../images/sprites.png')-0px -0px;
+    /* 垂直对齐方式 */
+    vertical-align: middle;
+}
+
+.mmg-service a:nth-child(2)::before {
+    background-position: -64px -0px;
+}
+
+.mmg-service a:nth-child(3)::before {
+    background-position: -130px -0px;
+}
+
+/* ----------------------版权信息：mmg-copyright */
+.mmg-copyright {
+    height: 168px;
+    background-color: #f5f5f5;
+}
+
+.mmg-copyright .container {
+    height: 168px;
+    padding-top: 41px;
+    box-sizing: border-box;
+    /* ps  */
+    /* background-color: pink; */
+    text-align: center;
+    font-size: 14px;
+    color: #383838;
+}
+
+.mmg-copyright .container a {
+    color: #383838;
+}
+
+.mmg-copyright .container p:first-child {
+    height: 35px;
+}
