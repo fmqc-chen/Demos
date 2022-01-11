@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 只让小喵喵，小鱼干变粉 */
+        /* 方法：在father这个div 的后代中找到P标签 */
+        /* .father p {
+            color: plum;
+        } */
+
+
+
+        /* 只让小喵喵变蓝 */
+        /* 方法：在father这个div 的子代中找到P标签 */
+        /* .father > p {
+            color: skyblue;
+        } */
+
+
+        /* 并集选择器 */
+        /* 让div和p标签变成橙色 */
+        /* div,
+        p {
+            color: orange;
+        } */
+
+
+        /* 交集选择器 */
+        /* 只让大灰狼变绿 */
+        /* 找到既是p标签，又有green这个类名的标签 */
+        p.green {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="father ">
+        <p>小喵喵</p>
+        <div class="green">
+            <p>小鱼干</p>
+        </div>
+    </div>
+    <p class="green">大灰狼</p>
+    <h1>我不要变色</h1>
+    <h2>我也不要变色</h2>
+</body>
+</html>
