@@ -1,0 +1,15 @@
+.father {
+    width: 100px;
+    .son {
+        color: pink;
+        // &表示当前选择器，不会生成后代关系
+        &:hover {
+            color: green;
+        }
+    }
+
+    &:hover {
+        color: grey;
+    }
+}
+// &方便代码迁移
