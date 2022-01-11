@@ -1,0 +1,53 @@
+// banner
+.carousel {
+    // 视口＜768，图片250
+    // 视口＜992，图片400
+    // 视口＞992，图片500
+
+    img {
+        height: 100%!important;
+    }
+
+    @media (max-width: 992px) {
+        .item {
+            height: 400px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .item {
+            height: 250px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .item {
+            height: 500px;
+        }
+    }
+}
+
+// head 
+.navbar-default {
+    background-color: transparent;
+    border: 0;
+}
+
+// project
+.project {
+    padding-top: 35px;
+    text-align: center;
+
+    .container {
+        div {
+            // ps 
+            // background-color: pink;
+            a {
+                display: block;
+                height: 360px;
+                // ps 
+                // background-color: skyblue
+            };
+        }
+    }
+}
