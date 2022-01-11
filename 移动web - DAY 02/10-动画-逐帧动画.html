@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 精灵图尺寸通过查找可得，1680，共12个图片。要保证显示区域的尺寸和一个精灵小图的尺寸相同 */
+            width: 140px;
+            height: 140px;
+            border: 1px solid #000;
+            background-image: url(./images/bg.png);
+            animation: move 1s steps(12) infinite;
+        }
+
+
+        @keyframes move {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                /* 图有多长，就移多长即可，注意方向 */
+                background-position: -1680px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

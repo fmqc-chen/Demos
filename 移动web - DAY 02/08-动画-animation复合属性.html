@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            /* animation: change 1s linear; */
+
+            /* 分步动画,分成3步 */
+            animation: change 1s steps(3);
+
+            /* 延迟时间 1s */
+            animation: change 1s steps(3) 1s;
+
+            /* 重复次数 */
+            /* 重复5次 */
+            animation: change 1s steps(3) 1s 5;
+            /* 无限循环 */
+            animation: change 1s infinite；
+
+            /* 动画方向。alternate,有去有回 */
+            animation: change 1s infinite alternate；
+
+            /* 执行完毕时的状态 ,backwards,默认值，回到初始状态；forwards,停留在结束状态。要删除 infinite、alternate*/
+            animation: change 1s backwards；
+        }
+
+        @keyframes change {
+            from {
+                width: 200px;
+            }
+            to {
+                width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

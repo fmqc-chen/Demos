@@ -1,0 +1,129 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: url(../images/background.jpg) no-repeat center 0;
+
+    /* 缩放背景图 */
+    /* contain，宽高等比例缩放 。当宽或高和盒子尺寸相同时，则图片不再进行缩放*/
+    /* background-size: contain; */
+    /* cover宽高等比例缩放。会使图片覆盖满整个盒子不会留白，但图片可能会不能完整显示 */
+    background-size: cover;
+}
+
+.cloud img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.cloud img:nth-child(1) {
+    margin-left: -300px;
+    top: 20px;
+    animation: cloud 2s infinite alternate;
+}
+
+.cloud img:nth-child(2) {
+    margin-left: 400px;
+    top: 100px;
+    animation: cloud 2s infinite alternate .6s;
+
+}
+
+.cloud img:nth-child(3) {
+    margin-left: -550px;
+    top: 200px;
+    animation: cloud 2s infinite alternate .8s;
+
+}
+
+/* 云彩动画 */
+@keyframes cloud {
+    to {
+        transform: translateX(30px);
+    }
+}
+
+.ballon {
+    position: relative;
+}
+
+.ballon img {
+    position: absolute;
+    left: 50%;
+    width: 110px;
+    margin-left: -390px;
+    margin-top: 120px;
+    animation: ballon 1.4s infinite alternate;
+}
+
+/* 气球动画 */
+@keyframes ballon {
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+/* 周边游 */
+.advertisement {
+    position: relative;
+}
+
+.advertisement img {
+    position: absolute;
+    left: 50%;
+    width: 400th;
+    margin-left: -340px;
+    margin-top: 230px;
+}
+
+/* 长颈鹿 */
+.giraffe {
+    position: relative;
+}
+
+.giraffe img {
+    position: absolute;
+    left: 50%;
+    margin-left: 230px;
+    margin-top: 125px;
+}
+
+.circular {
+    position: relative;
+}
+
+.circular img {
+    position: absolute;
+    left: 50%;
+    top: 560px;
+}
+
+
+.circular img:nth-child(1) {
+    margin-left: -480px;
+    animation: circular 1s infinite alternate;
+}
+
+.circular img:nth-child(2) {
+    margin-left: -208px;
+    animation: circular 1s infinite alternate .5s;
+}
+
+.circular img:nth-child(3) {
+    margin-left: 58px;
+    animation: circular 1s infinite alternate ;
+}
+
+.circular img:nth-child(4) {
+    margin-left: 320px;
+    animation: circular 1s infinite alternate .5s;
+}
+
+/* 小圆标动画 */
+@keyframes circular {
+    to {
+        transform: translateY(40px);
+    }
+}
